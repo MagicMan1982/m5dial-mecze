@@ -1,7 +1,19 @@
-         {
-           "matches": [
-             {"team": "FC Barcelona", "rival": "vs Villarreal", "date": "Niedziela 14:00"},
-             {"team": "Radomiak Radom", "rival": "vs Wisla Krakow", "date": "Dzisiaj 20:15"},
-             {"team": "Polska", "rival": "Przerwa zimowa", "date": "Kolejny w Marcu"}
-           ]
-         }
+{
+  "matches": [
+    {
+      "team": "FC Barcelona",
+      "rival": "vs Villarreal",
+      "date": "Niedziela 14:00"
+    },
+    {
+      "team": "Radomiak Radom",
+      "rival": "vs Wisla Krakow",
+      "date": "Dzisiaj 20:15"
+    },
+    {
+      "team": "Polska",
+      "rival": "Przerwa zimowa",
+      "date": "Kolejny w Marcu"
+    }
+  ]
+}
