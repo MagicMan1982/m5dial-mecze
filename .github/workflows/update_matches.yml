@@ -1,6 +1,6 @@
- name: Update Match Schedule from Web
+  name: Update Match Schedule from Web
 
-  on:
+  'on':
     schedule:
        - cron: '0 6   *'
     workflow_dispatch:
