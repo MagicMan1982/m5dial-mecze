@@ -1,0 +1,29 @@
+        name: Update Match Schedule
+    
+        on:
+          schedule:
+            - cron: '0 6 * * *' # Codziennie o 6:00 rano UTC
+          workflow_dispatch: # Przycisk do ręcznego uruchomienia w zakładce Actions
+    
+        jobs:
+          update:
+           runs-on: ubuntu-latest
+           permissions:
+             contents: write
+           steps:
+             - name: Checkout repo
+               uses: actions/checkout@v4
+   
+             - name: Set up Python
+               uses: setup-python@v5
+               with:
+                 python-version: '3.10'
+   
+             - name: Run update script
+               run: python update_matches.py
+   
+             - name: Commit and push if changed
+   26            uses: stefanzifelder/git-auto-commit-action@v5
+   27            with:
+   28              commit_message: "Automatyczna aktualizacja terminarza"
+   29              file_pattern: matches.json
