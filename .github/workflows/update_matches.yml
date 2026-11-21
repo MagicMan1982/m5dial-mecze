@@ -23,7 +23,7 @@ jobs:
                           run: python update_matches.py
                           
                         - name: Commit and push if changed                    
-                          uses: stefanzifelder/git-auto-commit-action@v5
+                          uses: stefanzweifel/git-auto-commit-action@v5
                           with:
                             commit_message: "Automatyczna aktualizacja terminarza"
                             file_pattern: matches.json
